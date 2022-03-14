@@ -51,7 +51,7 @@ app.post("/products", (req, res) =>{
     
     if(productAlreadyExists){
         res.status(404).json({error: "Product already exists"})
-    }
+    };
 
     products.push({
         id: uuidv4(),
