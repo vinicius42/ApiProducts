@@ -20,7 +20,7 @@ function checkIfProductAlreadyExists(req, res, next){
     req.code = code;
 
     return next();
-};
+}
 
 app.get("/products", checkIfProductAlreadyExists, (req, res) =>{
     const { code } = req;
